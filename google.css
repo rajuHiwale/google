@@ -1,0 +1,248 @@
+*{
+    margin: 0px;
+   padding: 0px;
+   box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+li{
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+header{
+   
+    height: 60px;
+}
+.nav-bar{
+    height:100% ;
+    width: 100%;
+   padding: 10px 20px;
+}
+.nav-bar ul{
+    text-align: end;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.nav-bar ul li{
+   padding: 8px 12px;
+   font-size: 20px;
+   font-weight: 500;        
+}
+
+.nav-bar ul li a{
+    color: black;
+}
+ .link:hover{
+  border-bottom: 1px solid black;
+} 
+.menu-icon{
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    
+}
+.menu-icon:hover{
+    background-color: rgb(243, 237, 237);
+}
+.nav-bar ul li button{
+    background-color: rgb(71, 71, 238);
+    color: white;
+    font: 20px;
+    padding: 7px 10px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.nav-bar ul li button:hover{
+    box-shadow: 0px 0px 4px 0px rgb(91, 91, 244);
+}
+
+/* section div */
+section{
+    width: 100%;
+    /* border: 1px solid black; */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+.search-section{
+   
+    margin-left: 10px;
+}
+.googleimg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     width: 90%;
+    margin-left: 30px;
+    
+}
+
+.search-bar{
+    border: 1px solid rgb(203, 196, 196);
+    width: 90%;
+    height: 45px;
+    border-radius:30px ;
+    justify-content: space-evenly;
+    align-items: center;
+    padding:8px 20px;
+    cursor: pointer; 
+    margin-top: 15px;
+    margin-left: 30px;
+   
+
+}
+.search-bar:hover{
+    box-shadow: 0px 0px 4px 0px rgb(194, 190, 190);
+}
+.search-bar input{
+    width: 90%;
+    height: 30px;
+    font-size:16px ;
+    border: none;
+    padding: 8px 12px;
+    margin: 0 10px;
+
+}
+.search-bar input:focus{
+    outline: none;
+}
+.search-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    padding: 9px 10px;
+}
+.search-button button{
+    font-size: 15px;
+    padding: 7px 15px;
+    margin: 15px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+
+}
+.languageSelect{
+    font-size: 15px;
+}
+.languageSelect span{
+    padding: 8px 8px;
+}
+
+/* footer div ====================== */
+    
+.footeDiv{
+    display: block;
+    width: 100%;
+}
+.firstFooter{
+    background-color: rgb(184, 183, 183);
+    height: 40px;
+    border-bottom: 1px solid rgb(148, 147, 147);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    }
+.firstFooter h5 {
+    padding: 9px 15px;
+    font-size: 15px;
+}
+.firstFooter a{
+    color: rgb(94, 94, 94);
+ }
+ .firstFooter a:hover{
+    color:rgb(70, 68, 68) ;
+ }
+
+/* second foote ===== */
+.secondFooter{
+    display: flex;
+    justify-content: space-between;
+    background-color:rgb(184, 183, 183) ;
+}
+.footList1 ul {
+    display: flex;
+    justify-content: start;
+     padding: 8px;
+}
+.footList1 li{
+    padding: 7px;
+    cursor: pointer;
+}
+.footList1 li a{
+    color: rgb(94, 94, 94);
+}
+.footList1 li a:hover{
+    color:rgb(70, 68, 68) ;
+}
+.footerList2 ul{
+    display: flex;
+    justify-content: start;
+     padding: 8px;
+}
+.footerList2 ul li{
+    padding: 7px;
+    cursor: pointer;
+}
+.footerList2 a{
+    color: rgb(94, 94, 94);
+}
+.footerList2 a:hover{
+    color:rgb(70, 68, 68);
+}
+
+/* media query for mobile and tablets */
+@media screen and (max-width:650px){
+ 
+    .search-bar{
+        width: 85%;
+    }
+    .search-bar input{
+        width: 75%;
+    }
+
+.firstFooter{
+    height: 60px;
+}
+.secondFooter{
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+}
+
+/* media query for small size mobile */
+@media screen and (max-width:350px){
+ 
+    .search-bar{
+        width: 70%;
+    }
+    .search-bar input{
+        width: 50%;
+    }
+
+.firstFooter{
+    height: 60px;
+}
+.secondFooter{
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+}
